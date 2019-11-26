@@ -22,7 +22,6 @@ public class Main {
             hmSomeWords.put(thisWord, hmSomeWords.getOrDefault(thisWord, 0) + 1);
         }
 
-        System.out.println(Arrays.toString(someWords));
         System.out.println(hmSomeWords);
     }
 
