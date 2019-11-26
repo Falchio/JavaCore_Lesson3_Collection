@@ -31,7 +31,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.PhoneBook">
+    <configuration name="PhoneBook" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PhoneBook" />
+      <module name="Lesson3_Collection" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SomeWords" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SomeWords" />
       <module name="Lesson3_Collection" />
@@ -41,6 +48,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PhoneBook" />
         <item itemvalue="Application.SomeWords" />
       </list>
     </recent_temporary>
