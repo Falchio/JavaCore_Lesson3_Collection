@@ -6,11 +6,11 @@ public class SomeWords {
 
     public static void main(String[] args) {
 
-        String[] someWords = {"Чебурашка", "Чемодан", "Чебоксары", "Чебуреки",
-                "Чебурашка", "Чемодан", "Рефракция", "АБАЖУР", "АББАТ",
-                "АББАТ", "АБЕРРАЦИЯ", "АБОРИГЕН", "АБРАКАДАБРА", "Чемодан",
-                "АБРАКАДАБРА", "АВТОДАФЕ", "АВТОДАФЕ", "АБАЖУР", "АБЕРРАЦИЯ", "АБСТРАКТНЫЙ",
-                "АГЕНТ", "АГЕНТ", "АБРАКАДАБРА", "АБСТРАКТНЫЙ",};
+        String[] someWords = {"АБАЖУР", "АБАЖУР", "АББАТ", "АББАТ",
+                "АБЕРРАЦИЯ", "АБЕРРАЦИЯ", "АБОРИГЕН", "АБРАКАДАБРА", "АБРАКАДАБРА",
+                "АБРАКАДАБРА", "АБСТРАКТНЫЙ", "АБСТРАКТНЫЙ", "АВТОДАФЕ", "АВТОДАФЕ",
+                "АГЕНТ", "АГЕНТ", "Рефракция", "Чебоксары", "Чебурашка", "Чебурашка",
+                "Чебуреки", "Чемодан", "Чемодан", "Чемодан"};
 
         Map<String, Integer> hmSomeWords = new HashMap<>();
 
@@ -20,6 +20,24 @@ public class SomeWords {
         }
 
         System.out.println(hmSomeWords);
+
+
+        String[][] phoneArray = new String[][]{
+                {"Ivanov", "8-999-999-99-99"}, {"Ivanov", "8-777-999-99-99"},
+                {"Petrov", "8-666-999-99-99"}, {"Petrov", "8-111-999-99-99"},
+                {"Petrov", "8-888-999-99-99"}, {"Sidorov", "8-333-999-99-99"},
+                {"Varov", "8-666-999-99-99"}, {"Ivanov", "8-444-999-99-99"},
+                {"Varov", "8-222-999-99-99"}, {"Korovkin", "8-555-999-99-99"},
+        };
+
+        PhoneBook phoneBook = new PhoneBook();
+
+        for (int i = 0; i < phoneArray.length; i++) {
+            phoneBook.add(phoneArray[i][0], phoneArray[i][1]);
+        }
+
+        String surNameForSearch = "Ivanov";
+        System.out.println("\n" + surNameForSearch + ":" + phoneBook.get(surNameForSearch));
     }
 
 }
