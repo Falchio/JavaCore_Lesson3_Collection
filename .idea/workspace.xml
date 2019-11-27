@@ -31,7 +31,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.PhoneBook">
+  <component name="RunManager" selected="Application.SomeWords">
     <configuration name="PhoneBook" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PhoneBook" />
       <module name="Lesson3_Collection" />
@@ -48,9 +48,17 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PhoneBook" />
         <item itemvalue="Application.SomeWords" />
+        <item itemvalue="Application.PhoneBook" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="phoneArray[i][0]" language="JAVA" />
+        <watch expression="phoneArray[i][1]" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
